@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="10dp"
+    android:background="@android:color/transparent"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_back"
+        >
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:gravity="center"
+            android:text="Time"
+            android:padding="2dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempcard"
+            android:gravity="center"
+            android:text="20"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_below="@id/time"
+            >
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:layout_height="40dp"
+            android:layout_below="@id/tempcard"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:id="@+id/WeatherConditionIcon"
+            android:src="@mipmap/ic_launcher"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_below="@id/WeatherConditionIcon"
+            android:id="@+id/windSPEED"
+            android:textColor="@color/black"
+            android:padding="3dp"
+            android:layout_margin="3dp"
+            android:text="WindSpeed"
+            android:textSize="20sp"
+            >
+
+        </TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
